@@ -14,14 +14,8 @@ public class Maskify {
 	public static void main(String[] args) {
 		Maskify mask = new Maskify();
 		System.out.println(mask.maskify("oly"));
-<<<<<<< HEAD
-		
-	
-=======
-		System.out.println(mask.maskify("lets test it!"));
 
->>>>>>> 6d843e05f58daffdc1011ccee936a04ff74d51f8
-	}
+}
 
 	public String maskify(String str) {
 		if (str.length() < 4) {
