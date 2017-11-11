@@ -14,6 +14,8 @@ public class Maskify {
 	public static void main(String[] args) {
 		Maskify mask = new Maskify();
 		System.out.println(mask.maskify("oly"));
+		System.out.println(mask.maskify("lets test it!"));
+
 	}
 
 	public String maskify(String str) {
