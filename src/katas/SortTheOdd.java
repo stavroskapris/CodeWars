@@ -11,32 +11,24 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SortTheOdd {
-	public  int[] sortArray(int[] array) {
-		  ArrayList<Integer> oddNumbers = new ArrayList<Integer>();
-				for (int i = 0; i < array.length; i++) {
-					if (array[i] % 2 != 0) {
-						oddNumbers.add(array[i]);
-
-					}
-				}
-				Collections.sort(oddNumbers);
-				int counter = 0;
-				for (int i = 0; i < array.length; i++) {
-					if (array[i] % 2 != 0) {
-
-						array[i] = oddNumbers.get(counter);
-						counter++;
-					}
-
-				}
-				for (int i = 0; i < array.length; i++){
-					System.out.print(array[i]+",");
-					}
-		  
-		  
-		  
-		    return array;
-		  }
+	public int[] sortArray(int[] array) {
+		ArrayList<Integer> oddNumbers = new ArrayList<Integer>();
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] % 2 != 0) {
+				oddNumbers.add(array[i]);
+			}
 		}
-
-
+		Collections.sort(oddNumbers);
+		int counter = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] % 2 != 0) {
+				array[i] = oddNumbers.get(counter);
+				counter++;
+			}
+		}
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i] + ",");
+		}
+		return array;
+	}
+}

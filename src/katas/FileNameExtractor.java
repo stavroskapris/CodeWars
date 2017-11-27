@@ -12,15 +12,11 @@ FILE_NAME.EXTENSION
 This_is_an_otherExample.mpg
 myFile.tar
 */
-
 package katas;
-
 public class FileNameExtractor {
 
 	public static void main(String[] args) {
 		String s = "1231231223123131_myFile.tar.gz2";
-
-		
 		System.out.println(FileNameExtractor.extractFileName(s));
 
 	}
@@ -28,7 +24,7 @@ public class FileNameExtractor {
 	public static String extractFileName(String dirtyFileName) {
 		int underScore = dirtyFileName.indexOf("_");
 		int dot = dirtyFileName.lastIndexOf(".");
-		
+
 		return dirtyFileName.substring(underScore + 1, dot);
 	}
 }

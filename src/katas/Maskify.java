@@ -14,23 +14,19 @@ public class Maskify {
 	public static void main(String[] args) {
 		Maskify mask = new Maskify();
 		System.out.println(mask.maskify("oly"));
-
-}
+	}
 
 	public String maskify(String str) {
 		if (str.length() < 4) {
 			return str;
 		}
-
 		int replaceStr = str.length() - 4;
 		String secondPart = str.substring(replaceStr);
 		String firstPart = "#";
 		StringBuilder sb = new StringBuilder(firstPart);
 		for (int i = 0; i <= replaceStr - 2; i++) {
 			sb = sb.append("#");
-
 		}
 		return sb.toString() + secondPart;
-
 	}
 }

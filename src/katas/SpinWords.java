@@ -16,9 +16,7 @@ public class SpinWords {
 
 	public String spinWords(String sentence) {
 		String[] resultArr = sentence.split("\\s+");
-
 		for (int i = 0; i < resultArr.length; i++) {
-
 			if (resultArr[i].length() >= 5) {
 				StringBuilder sb = new StringBuilder(resultArr[i]);
 				resultArr[i] = sb.reverse().toString();
@@ -28,10 +26,7 @@ public class SpinWords {
 		for (String s1 : resultArr) {
 			ssb.append(s1 + " ");
 		}
-
 		String result = ssb.toString().trim();
-
 		return result;
-
 	}
 }

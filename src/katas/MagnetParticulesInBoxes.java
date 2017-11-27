@@ -23,31 +23,23 @@ double(1, 10) => 0.5580321939764581
 double(10, 100) => 0.6832948559787737
 
 */
-
 package katas;
-
 public class MagnetParticulesInBoxes {
 
 	public static void main(String[] args) {
 		MagnetParticulesInBoxes magnet = new MagnetParticulesInBoxes();
 		System.out.println(magnet.doubles(1, 3));
-
 		System.out.println(magnet.doubles(1, 10));
-
 		System.out.println(magnet.doubles(10, 100));
-
 	}
 
 	public double doubles(int maxk, int maxn) {
 		double sum = 0;
-
 		for (int k = 1; k <= maxk; k++) {
 			for (int n = 1; n <= maxn; n++) {
 				sum += 1 / (k * Math.pow(n + 1, 2 * k));
 			}
 		}
-
 		return sum;
 	}
-
 }

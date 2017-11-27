@@ -23,16 +23,13 @@ public class TwiceLinear {
 
 	public static void main(String[] args) {
 		TwiceLinear tl = new TwiceLinear();
-
 		System.out.println(tl.dblLinear(12));
 
 	}
 
 	public int dblLinear(int n) {
-
 		TreeSet<Integer> set = new TreeSet<Integer>();
 		set.add(1);
-
 		for (int i = 0; i < n; i++) {
 			int x = set.first();
 			set.add(2 * x + 1);
@@ -41,6 +38,5 @@ public class TwiceLinear {
 		}
 		// System.out.println(set);
 		return set.first();
-
 	}
 }

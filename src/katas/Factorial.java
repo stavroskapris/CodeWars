@@ -6,24 +6,23 @@ Write a function to calculate factorial for a given input.
 If input is below 0 or above 12 throw an exception of type 
 ArgumentOutOfRangeException (C#) or IllegalArgumentException (Java) 
 or RangeException (PHP) or throw a RangeError (JavaScript).*/
-
-
 package katas;
-public class Factorial {
 
+public class Factorial {
 	public static void main(String[] args) {
-		Factorial fac=new Factorial();
+		Factorial fac = new Factorial();
 		fac.factorial(13);
-		}
+	}
+
 	public int factorial(int n) {
-	    if(n<0 ||n>12){
-	    	throw new IllegalArgumentException("Sorry!!");
-	    }
-	     int result=1;
-	    for(int i=0; i<n;i++){
-	    result=result*(n-i);	
-	    }
-	    System.out.println("To paragontiko tou "+n+" einai : "+result);
-	    return result;
-	  }
+		if (n < 0 || n > 12) {
+			throw new IllegalArgumentException("!!");
+		}
+		int result = 1;
+		for (int i = 0; i < n; i++) {
+			result = result * (n - i);
+		}
+		// System.out.println("To paragontiko tou " + n + " einai : " + result);
+		return result;
+	}
 }

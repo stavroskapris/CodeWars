@@ -14,19 +14,13 @@ package katas;
 public class TheFuscFunctionPart1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 	public int fusc(int n) {
-
 		if (n == 0 || n == 1)
 			return n;
-
 		if (n % 2 == 0)
 			return fusc(n / 2);
-
 		return fusc(n / 2) + fusc(n / 2 + 1);
-
 	}
 }

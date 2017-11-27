@@ -22,18 +22,17 @@ you do not need to worry about your solution timing out.
 
 #Output
 The middle character(s) of the word represented as a string.*/
-
 package katas;
 
 public class GetMiddleCharacter {
 	public  String getMiddle(String word) {
-		String apotelesma=null;
+		String result=null;
 		if(word.length()%2==0){
-		apotelesma=word.substring((word.length()/2)-1,(word.length()/2)+1);
+		result=word.substring((word.length()/2)-1,(word.length()/2)+1);
 		}
 		else{
-		apotelesma=Character.toString(word.charAt((word.length()-1)/2));
+		result=Character.toString(word.charAt((word.length()-1)/2));
 		}
-		return apotelesma;
+		return result;
 		  }
 }

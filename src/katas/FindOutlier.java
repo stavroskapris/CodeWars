@@ -17,13 +17,10 @@ public class FindOutlier {
 
 	public static void main(String[] args) {
 		int[] ints = { 160, 3, 1719, 19, 11, 13, -21 };
-		
-
 		System.out.println(FindOutlier.find(ints));
-
 	}
 
-	public static  int find(int[] integers) {
+	public static int find(int[] integers) {
 		int count = 0;
 		int result = 0;
 		int pos = 0;
@@ -47,4 +44,3 @@ public class FindOutlier {
 		return result;
 	}
 }
-
